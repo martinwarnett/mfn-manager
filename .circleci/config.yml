@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  test-java:
+  test-man-manager:
     docker:
       - image: cimg/openjdk:23.0
     steps:
@@ -28,6 +28,6 @@ jobs:
           name: deploy
           command: '#e.g. ./deploy.sh'
 workflows:
-  build-and-test:
+  build-and-test-mfn-manager:
     jobs:
-      - test-java
+      - test-mfn-manager
