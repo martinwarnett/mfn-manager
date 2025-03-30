@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  test-man-manager:
+  test-mfn-manager:
     docker:
       - image: cimg/openjdk:23.0
     steps:
