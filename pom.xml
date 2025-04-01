@@ -16,6 +16,7 @@
     <description>Helper application for the MFN Manager online game.</description>
     <modules>
         <module>app</module>
+        <module>ui</module>
     </modules>
 
     <properties>
@@ -92,6 +93,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
             <version>7.0.0-M3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.xmlunit/xmlunit-core -->
+        <dependency>
+            <groupId>org.xmlunit</groupId>
+            <artifactId>xmlunit-core</artifactId>
+            <version>2.10.0</version>
+            <scope>test</scope>
         </dependency>
         <!-- END SECTION -->
 
