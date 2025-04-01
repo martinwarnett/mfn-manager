@@ -79,3 +79,4 @@ replay_pid*
 /target/site/team.html
 /target/site/images/update.gif
 /target/site/images/window-new.png
+/.idea/compiler.xml
