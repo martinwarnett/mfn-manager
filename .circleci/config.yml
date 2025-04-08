@@ -3,6 +3,7 @@ jobs:
   test-mfn-manager:
     docker:
       - image: cimg/openjdk:23.0
+    resource_class: small
     steps:
       - checkout
       - run:
