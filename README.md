@@ -1,11 +1,10 @@
 # MFN Manager
-y
+
 ## Table of Contents
 - [Introduction](#Introduction)
 - [Project Structure](#Project-structure)
 - [Toolset](#Toolset)
 - [Build Status](#Build-Status)
- 
 
 ### Introduction
 
