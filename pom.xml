@@ -32,6 +32,7 @@
         <maven-project-info-reports-plugin.version>3.9.0</maven-project-info-reports-plugin.version>
         <spotbugs-maven-plugin.version>4.9.3.0</spotbugs-maven-plugin.version>
         <owasp-check.version>12.1.0</owasp-check.version>
+        <start-class>com.warnett.mfnmanager.app.MFNManagerApplication</start-class>
     </properties>
 
     <dependencies>
@@ -67,6 +68,7 @@
     </dependencies>
 
     <build>
+        <finalName>MFNManager</finalName>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
