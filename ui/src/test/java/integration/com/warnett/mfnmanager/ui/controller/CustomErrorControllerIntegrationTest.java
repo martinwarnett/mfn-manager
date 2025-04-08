@@ -1,11 +1,10 @@
 package integration.com.warnett.mfnmanager.ui.controller;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-public class CustomErrorControllerIntegrationTest extends BaseControllerIntegrationTest {
+class CustomErrorControllerIntegrationTest extends BaseControllerIntegrationTest {
     @Test
     @DisplayName("Check error page renders correctly")
     void handleErrorTest() throws Exception {

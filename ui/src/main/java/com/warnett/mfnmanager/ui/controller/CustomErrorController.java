@@ -1,6 +1,5 @@
 package com.warnett.mfnmanager.ui.controller;
 
-import ch.qos.logback.core.testUtil.EnvUtilForTests;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.boot.web.servlet.error.ErrorController;

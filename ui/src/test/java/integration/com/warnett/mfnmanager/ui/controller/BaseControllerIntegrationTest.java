@@ -9,7 +9,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest(classes = TestConfig.class)
 @AutoConfigureMockMvc
-public class BaseControllerIntegrationTest {
+public abstract class BaseControllerIntegrationTest {
     @Autowired
     protected MockMvc mockMvc;
 

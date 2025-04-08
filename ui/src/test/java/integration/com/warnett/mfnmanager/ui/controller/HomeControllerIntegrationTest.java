@@ -4,7 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-public class HomeControllerIntegrationTest extends BaseControllerIntegrationTest {
+class HomeControllerIntegrationTest extends BaseControllerIntegrationTest {
 
     @Test
     @DisplayName("Check that Home page generated correctly")

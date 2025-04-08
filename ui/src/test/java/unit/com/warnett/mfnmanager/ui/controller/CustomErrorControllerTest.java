@@ -1,10 +1,12 @@
 package unit.com.warnett.mfnmanager.ui.controller;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import com.warnett.mfnmanager.ui.controller.CustomErrorController;
-import com.warnett.mfnmanager.ui.controller.HomeController;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,11 +16,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.Mock;
 
 import java.util.stream.Stream;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.fail;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 class CustomErrorControllerTest extends BaseControllerTest<CustomErrorController> {
 
