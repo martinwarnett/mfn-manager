@@ -1,15 +1,12 @@
 package integration.com.warnett.mfnmanager.ui.controller;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import com.warnett.mfnmanager.ui.controller.CustomErrorController;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 
+@WebMvcTest(controllers= CustomErrorController.class)
 class CustomErrorControllerIntegrationTest extends BaseControllerIntegrationTest {
-    @Test
-    @DisplayName("Check error page renders correctly")
-    void handleErrorTest() throws Exception {
-        final var page = mockMvc.perform(MockMvcRequestBuilders.get("/error"));
 
-        pageChecker.checkPage(page, 200, "pages/mfn-error");
+    CustomErrorControllerIntegrationTest() {
+        super("/error","pages/mfn-error");
     }
 }
