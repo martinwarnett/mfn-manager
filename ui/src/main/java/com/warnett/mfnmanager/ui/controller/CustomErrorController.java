@@ -1,5 +1,6 @@
 package com.warnett.mfnmanager.ui.controller;
 
+import ch.qos.logback.core.testUtil.EnvUtilForTests;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.boot.web.servlet.error.ErrorController;
@@ -17,14 +18,16 @@ public class CustomErrorController implements ErrorController {
 
         if (status != null) {
             int statusCode = Integer.parseInt(status.toString());
-            model.addAttribute("errorCode", statusCode);
-            model.addAttribute("errorMessage", message != null ? message : getErrorMessage(statusCode));
+            model.addAttribute("error_code", statusCode);
+            model.addAttribute("error_message", message != null ? message : getErrorMessage(statusCode));
         } else {
-            model.addAttribute("errorCode", "UNKNOWN");
-            model.addAttribute("errorMessage", "An unknown error occurred");
+            model.addAttribute("error_code", "UNKNOWN");
+            model.addAttribute("error_message", message != null ? message : "An unknown error occurred");
         }
 
-        return "error"; // Thymeleaf template name
+        model.addAttribute("page_title", "MFN Manager - Error");
+
+        return "pages/mfn-error"; // Thymeleaf template name
     }
 
     private String getErrorMessage(int statusCode) {
