@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  codecov: codecov/codecov@1.0.2
+  codecov: codecov/codecov@3
 jobs:
   test-mfn-manager:
     docker:
@@ -26,7 +26,6 @@ jobs:
           paths:
             - ~/.m2/repository
       - codecov/upload:
-        file: {{/home/circleci/project/mfn-nager/aggregate-report/target/site/jacoco.xml}}
   deploy:
     docker:
       - image: cimg/base:stable
