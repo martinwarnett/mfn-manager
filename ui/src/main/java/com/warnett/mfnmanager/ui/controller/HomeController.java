@@ -11,6 +11,6 @@ public class HomeController {
     public String homePage(Model model) {
         model.addAttribute("page_title", "MFN Manager - Home");
 
-        return "mfn-home";
+        return "pages/mfn-home";
     }
 }
