@@ -1,4 +1,6 @@
 version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
 jobs:
   test-mfn-manager:
     docker:
@@ -23,6 +25,8 @@ jobs:
           key: cache-{{ checksum "/tmp/CIRCLECI_CACHE_KEY" }}
           paths:
             - ~/.m2/repository
+      - codecov/upload:
+        file: {{coverage_report}}
   deploy:
     docker:
       - image: cimg/base:stable
