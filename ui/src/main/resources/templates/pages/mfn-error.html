@@ -18,11 +18,11 @@
 </head>
 <body>
     <div th:insert="~{fragments/common/mfn-navigation-bar :: mfn-navbar}"></div>
-    <div class="error-container">
-        <h1>Error Occurred</h1>
-        <p><strong>Error Code:</strong> <span th:text="${errorCode}">Unknown</span></p>
-        <p><strong>Message:</strong> <span th:text="${errorMessage}">An error occurred</span></p>
-        <a href="/">Return to Home Page</a>
-</div>
+     <div class="error-container">
+            <h1>Error Occurred</h1>
+            <p><strong>Error Code:</strong> <span th:text="${errorCode}">Unknown</span></p>
+            <p><strong>Message:</strong> <span th:text="${errorMessage}">An error occurred</span></p>
+            <a href="/">Return to Home Page</a>
+    </div>
 </body>
 </html>
