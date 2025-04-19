@@ -21,6 +21,7 @@
         <module>ui</module>
         <module>aggregate-report</module>
         <module>comms</module>
+        <module>exceptions</module>
     </modules>
 
     <properties>
