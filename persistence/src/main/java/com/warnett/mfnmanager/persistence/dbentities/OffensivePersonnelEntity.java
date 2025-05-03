@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name="offensive_personnel", schema="reference_data")
-public record OffensivePersonnel(
+public record OffensivePersonnelEntity(
     @Id
     @Column(name="id")
     Integer id,
@@ -30,7 +30,7 @@ public record OffensivePersonnel(
     LocalDateTime lastUpdatedDate) {
 
     // Empty constructor required by JPA
-    public OffensivePersonnel() {
+    public OffensivePersonnelEntity() {
         this(null,null, null, null, null, null);
     }
 }
