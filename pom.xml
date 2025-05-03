@@ -23,6 +23,7 @@
         <module>comms</module>
         <module>exceptions</module>
         <module>persistence</module>
+        <module>db-scripts</module>
     </modules>
 
     <properties>
@@ -50,11 +51,6 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
