@@ -24,6 +24,7 @@
         <module>exceptions</module>
         <module>persistence</module>
         <module>db-scripts</module>
+        <module>entities</module>
     </modules>
 
     <properties>
