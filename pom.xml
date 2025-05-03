@@ -22,6 +22,7 @@
         <module>aggregate-report</module>
         <module>comms</module>
         <module>exceptions</module>
+        <module>persistence</module>
     </modules>
 
     <properties>
